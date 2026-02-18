@@ -1,0 +1,21 @@
+class shape:
+    def draw(self):
+        print("Drawing a shape")
+        
+class circle(shape):
+    def draw(self):
+        print("Drawing a circle")
+        
+class square(shape):
+    def draw(self):
+        print("Drawing a square")
+        
+#main code
+s1 = circle()
+s2 = square()
+
+#using parent type behaviour (polymorphism)
+shapes = [s1 , s2]
+
+for shape in shapes:
+    shape.draw()
